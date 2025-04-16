@@ -21,9 +21,17 @@ android {
         }
     }
     kotlinOptions {
-        jvmTarget = "20"  // ✅ valid
+        jvmTarget = '11'  // ✅ valid
     }
+    viewBinding {
+        enabled = true
+    }
+
     namespace "com.elconfidencial.bubbleshowcase"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
 }
 
 dependencies {
