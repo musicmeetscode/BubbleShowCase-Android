@@ -1,5 +1,5 @@
 # BubbleShowCase - Android
- [ ![Download](https://api.bintray.com/packages/laboratorioec/Laboratorio-apps/BubbleShowCase/images/download.svg) ](https://bintray.com/laboratorioec/Laboratorio-apps/BubbleShowCase/_latestVersion)
+ [ [Download]](https://bintray.com/laboratorioec/Laboratorio-apps/BubbleShowCase/_latestVersion)
  [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-BubbleShowCase-green.svg?style=flat )]( https://android-arsenal.com/details/1/7119 )
 
 BubbleShowCase is an elegant and simple framework developed in Kotlin (usable also in Java) that let you to use informative bubbles to help your users pointing out different features of your application or in your App onboarding. The basic use of the framework consists on a target element passed as input which will be highlighted over a translucent background and pointed out by a customizable bubble.
@@ -8,11 +8,15 @@ BubbleShowCase is an elegant and simple framework developed in Kotlin (usable al
 
 ## Getting started
 
-Add the library into your proyect is really easy, you just need to add this line in dependencies block in your app Gradle:
+Add the library into your project is really easy, 
+1. Add the maven jitpack dependency to your project build.gradle repositories block
 ```groovy
-implementation 'com.elconfidencial.bubbleshowcase:bubbleshowcase:LATEST_VERSION'
+maven { url 'https://jitpack.io' }
 ```
-**NOTE:** You can check the LATEST_VERSION in the version badge at the top of this file.
+2. Then add the repo to your dependencies in your app  build.gradle
+```groovy
+implementation 'com.github.musicmeetscode:BubbleShowCase-Android:v2.0.2'
+```
 
 ## Usage
 ### Basic sample
